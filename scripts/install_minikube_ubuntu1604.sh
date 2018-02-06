@@ -29,7 +29,7 @@ touch $HOME/.kube/config
 export KUBECONFIG=$HOME/.kube/config
 
 # Start Minikube
-sudo minikube start --vm-driver=none minikube --bootstrapper=kubeadm
+sudo minikube start --vm-driver=none --bootstrapper=kubeadm
 
 sudo chown -R $USER $HOME/.minikube
 sudo chgrp -R $USER $HOME/.minikube
